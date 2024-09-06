@@ -5,6 +5,8 @@ local options = {
     html = { "prettier" },
     typescript = { "prettierd", "prettier" },
     javascript = { "prettierd", "prettier" },
+    javascriptreact = { "prettierd", "prettier" },
+    typescriptreact = { "prettierd", "prettier" },
   },
 
   format_on_save = {
@@ -12,6 +14,6 @@ local options = {
     timeout_ms = 500,
     lsp_fallback = true,
   },
- }
+}
 
 return options

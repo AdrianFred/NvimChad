@@ -1,7 +1,7 @@
 return {
   {
     "stevearc/conform.nvim",
-    -- event = 'BufWritePre', -- uncomment for format on save
+    event = "BufWritePre", -- uncomment for format on save
     opts = require "configs.conform",
   },
 
@@ -14,14 +14,30 @@ return {
   },
 
   {
-  	"nvim-treesitter/nvim-treesitter",
-  	opts = {
-  		ensure_installed = {
-  			"vim", "lua", "vimdoc",
-       "html", "css"
-  		},
-  	},
+    "nvim-treesitter/nvim-treesitter",
+    event = "BufWritePre",
+    config = function()
+      require "configs.treesitter"
+    end,
   },
-  
+  {
+    "hrsh7th/nvim-cmp",
+    dependencies = {
+      {
+        "supermaven-inc/supermaven-nvim",
+        opts = {},
+      },
+    },
 
+    opts = {
+      sources = {
+        { name = "nvim_lsp" },
+        { name = "luasnip" },
+        { name = "buffer" },
+        { name = "nvim_lua" },
+        { name = "path" },
+        { name = "supermaven" },
+      },
+    },
+  },
 }
