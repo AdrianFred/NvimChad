@@ -3,10 +3,14 @@ local options = {
     lua = { "stylua" },
     css = { "prettier" },
     html = { "prettier" },
-    typescript = { "prettierd", "prettier" },
-    javascript = { "prettierd", "prettier" },
-    javascriptreact = { "prettierd", "prettier" },
-    typescriptreact = { "prettierd", "prettier" },
+    -- typescript = { "prettierd", "prettier" },
+    -- javascript = { "prettierd", "prettier" },
+    -- javascriptreact = { "prettierd", "prettier" },
+    -- typescriptreact = { "prettierd", "prettier" },
+    javascriptreact = { "biome" },
+    typescriptreact = { "biome" },
+    javascript = { "biome" },
+    typescript = { "biome" },
   },
 
   format_on_save = {
