@@ -23,9 +23,22 @@ return {
   {
     "hrsh7th/nvim-cmp",
     dependencies = {
+      -- {
+      --   "supermaven-inc/supermaven-nvim",
+      --   opts = {},
+      -- },
       {
-        "supermaven-inc/supermaven-nvim",
-        opts = {},
+        -- snippet plugin
+        "L3MON4D3/LuaSnip",
+        dependencies = "rafamadriz/friendly-snippets",
+        opts = { history = true, updateevents = "TextChanged,TextChangedI" },
+        config = function(_, opts)
+          require("luasnip").config.set_config(opts)
+          require "nvchad.configs.luasnip"
+          local ls = require "luasnip"
+          ls.filetype_extend("javascriptreact", { "html" })
+          ls.filetype_extend("typescriptreact", { "html" })
+        end,
       },
     },
 
