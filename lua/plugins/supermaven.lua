@@ -5,7 +5,7 @@ return {
     opts = {
       keymaps = {
         accept_suggestion = "<Tab>",
-        clear_suggestion = "<C-]",
+        clear_suggestion = "<C-]>",
         accept_word = "<C-y>",
       },
       -- color = {
