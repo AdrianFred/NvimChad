@@ -9,3 +9,6 @@ local o = vim.o
 o.shiftwidth = 4
 o.tabstop = 4
 o.softtabstop = 4
+
+-- Relative line number lines
+o.relativenumber = true
