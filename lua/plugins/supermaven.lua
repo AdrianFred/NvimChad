@@ -6,7 +6,7 @@ return {
       keymaps = {
         accept_suggestion = "<Tab>",
         clear_suggestion = "<C-]>",
-        accept_word = "<C-y>",
+        accept_word = "<C-u>",
       },
       -- color = {
       --   suggestion_color = "#ffffff",
