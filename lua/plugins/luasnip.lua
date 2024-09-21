@@ -13,10 +13,26 @@ return {
     ls.filetype_extend("typescriptreact", { "html" })
     ls.filetype_extend("vue", { "html" })
 
+    -- Add custom snippets for Vue
     ls.add_snippets("vue", {
+      -- Class snippet
       s("class", {
         t 'class=""',
         -- You can also add more placeholders here if needed
+      }),
+
+      -- Vue component snippet
+      s("vcomp", {
+        t {
+          "<script setup>",
+          "const loading = ref(false)",
+          "</script>",
+          "",
+          "<template>",
+          "  <div>",
+          "  </div>",
+          "</template>",
+        },
       }),
     })
 
