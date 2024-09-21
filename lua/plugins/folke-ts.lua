@@ -13,6 +13,7 @@ return {
           spread_element = "// %s",
           statement_block = "// %s",
         },
+        vue = "<!-- %s -->",
       },
     },
     event = "VeryLazy",

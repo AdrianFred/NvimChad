@@ -11,6 +11,7 @@ local options = {
     typescriptreact = { "biome" },
     javascript = { "biome" },
     typescript = { "biome" },
+    vue = { "prettier" },
   },
 
   format_on_save = {

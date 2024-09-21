@@ -14,6 +14,7 @@ local options = {
     "go",
     "rust",
     "python",
+    "vue",
   },
   highlight = {
     enable = true,
